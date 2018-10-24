@@ -10,9 +10,9 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 using_Extension = [x.upper() for x in [".wav", ".m4a", ".flac"]];
 
 '''
-wav파일과 speaker 정보를 pickle로 만듭니다.
-각 pickle은 2가지 데이터를 포함합니다: Speaker, 40Mel
-Metadata.pickle은 Speaker 정보와 전체 pickle의 세부 정보, pickle list를 포함합니다.
+Making pickle the wav file and speaker information.
+Each pickle contains two pieces of data: Speaker, 40Mel
+Metadata.pickle contains speaker information, details of the entire pickle, and a pickle list.
 '''
 max_Worker = 15;
 
@@ -106,8 +106,8 @@ def Pattern_Generate_VC(
 def Metadata_Generate():    
     speaker_Dict = {};
     mel_Length_Dict = {};
-    
-    #ProcessPoolExcuter는 별개의 클라이언트로 구동시키기 때문에 global 변수의 사용이 불가능해서 재로드해야됨....
+        
+    #Because ProcessPoolExcuter runs the independent clients, global variables cannot be used and all files must be reloaded for metadata.
     print("Pickle data check...")
     for root, directory_List, file_Name_List in os.walk(speaker_Embedding_Parameters.pattern_Path):
         for index, pattern_File_Name in enumerate(file_Name_List):
