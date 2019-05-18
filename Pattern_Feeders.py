@@ -71,7 +71,7 @@ class Speaker_Embedding:
 
     def New_Pattern_Append(self, speaker_Batch_List):
         pattern_Count = speaker_Embedding_Parameters.batch_Speaker * speaker_Embedding_Parameters.batch_Pattern_per_Speaker;
-        mel_Length = np.random.randint(speaker_Embedding_Parameters.pattern_Frame_Range[0], speaker_Embedding_Parameters.pattern_Frame_Range[0] + 1);
+        mel_Length = np.random.randint(speaker_Embedding_Parameters.pattern_Frame_Range[0], speaker_Embedding_Parameters.pattern_Frame_Range[1] + 1);
         
         mel_Spectrogram_Pattern_Array = np.zeros((pattern_Count, mel_Length, speaker_Embedding_Parameters.mel_Dimension)).astype(np.float32);
         mel_Spectrogram_Length_Array = np.zeros((pattern_Count)).astype(np.int32) + mel_Length;
