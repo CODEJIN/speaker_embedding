@@ -6,7 +6,7 @@ import time, os, librosa;
 import _pickle as pickle;
 from Audio import melspectrogram, _normalize;
 from random import shuffle, random;
-from Hyper_Parameters import speaker_Embedding_Parameters, synthesizer_Parameters, sound_Parameters;
+from Hyper_Parameters import speaker_Embedding_Parameters, sound_Parameters;
 
 class Speaker_Embedding:
     def __init__(
