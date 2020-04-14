@@ -5,8 +5,7 @@ import tensorflow as tf;
 import numpy as np;
 from tensorflow.contrib.rnn import RNNCell, BasicRNNCell, LSTMCell, GRUCell, MultiRNNCell, LSTMStateTuple, OutputProjectionWrapper;
 from tensorflow.contrib.seq2seq import AttentionWrapper, BahdanauMonotonicAttention, BasicDecoder, dynamic_decode, Helper, TrainingHelper;
-from ZoneoutLSTMCell import ZoneoutLSTMCell;      
-from Hyper_Parameters import synthesizer_Parameters, sound_Parameters;
+from Hyper_Parameters import sound_Parameters;
 
 def Cosine_Similarity(x,y):
     """
