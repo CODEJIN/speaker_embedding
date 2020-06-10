@@ -4,7 +4,12 @@ This code is used to extract the speaker's feature from wav and make the speaker
 
     Wan, L., Wang, Q., Papir, A., & Moreno, I. L. (2017). Generalized end-to-end loss for speaker verification. arXiv preprint arXiv:1710.10467.
     Jia, Y., Zhang, Y., Weiss, R. J., Wang, Q., Shen, J., Ren, F., ... & Wu, Y. (2018). Transfer Learning from Speaker Verification to Multispeaker Text-To-Speech Synthesis. arXiv preprint arXiv:1806.04558.
-    
+
+* I uploaded the Torch version speaker embedding model. If you want, please refer the following:
+
+    https://github.com/CODEJIN/Speaker_Embedding_Torch
+
+
 # Training and test
 
 VCTK, LibriSpeech, VoxCeleb1, and VoxCeleb2 were used for model learning, and some of the test sets of VoxCeleb1 that were not learned were used for testing the learned model. Please refer to the following link for each dataset:
